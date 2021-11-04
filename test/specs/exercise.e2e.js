@@ -8,6 +8,11 @@ describe('Czechitas Login Page', () => {
         
         browser.url('/prihlaseni');
 
+        const windowSize = browser.getWindowSize();
+        console.log(windowSize);
+
+        browser.saveScreenshot('screenshots/login_page.png');
+
         browser.pause(5000);
         
     });
